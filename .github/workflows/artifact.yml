@@ -27,10 +27,11 @@ jobs:
       uses: actions/download-artifact@v6.0.0
       with: 
         name: hello-artifact
-        path: ./artifacts/
+        path: ./artifacts
 
     - name: View hello.txt
       run: cat ./artifacts/hello.txt
+
 
 
 
