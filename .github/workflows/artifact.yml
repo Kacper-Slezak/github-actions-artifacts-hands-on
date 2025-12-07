@@ -26,9 +26,10 @@ jobs:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v6.0.0
       with: 
-        name: hello.txt
+        name: hello-artifact
         path: ./artifacts/hello.txt
 
     - name: View hello.txt
-      run: cat hello.txt
+      run: cat ./artifacts/hello.txt
+
 
